@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentBridge - Hallgatóknak</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #6FC0A4;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #6FC0A4;
+            color: white;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+        .content h2 {
+            text-align: center;
+            color: #6FC0A4;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 2rem;
+        }
+        .feature {
+            background-color: white;
+            padding: 1.5rem;
+            margin: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+        }
+        .feature h3 {
+            color: #6FC0A4;
+        }
+        .register-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background-color: #fff;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .register-section h3 {
+            margin-bottom: 1rem;
+            color: #6FC0A4;
+        }
+        .register-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .register-section input {
+            margin: 0.5rem 0;
+            padding: 0.8rem;
+            width: 80%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .register-section button {
+            margin-top: 1rem;
+            background-color: #6FC0A4;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .register-section button:hover {
+            background-color: #58A688;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StudentBridge</h1>
+    </header>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="students.html">Hallgatóknak</a>
+        <a href="companies.html">Cégeknek</a>
+        <a href="about.html">Rólunk</a>
+    </nav>
+    <div class="content">
+        <h2>Miért éri meg csatlakozni?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>Szakmai fejlődés</h3>
+                <p>Valós projektekben vehetsz részt, amelyek elősegítik karriered építését.</p>
+            </div>
+            <div class="feature">
+                <h3>Networking</h3>
+                <p>Kapcsolatot építhetsz iparági szakértőkkel és vállalatokkal.</p>
+            </div>
+            <div class="feature">
+                <h3>Gyakorlati tapasztalat</h3>
+                <p>Elsajátíthatod a legmodernebb eszközök használatát és szakmai tudást szerezhetsz.</p>
+            </div>
+        </div>
+        <div class="register-section">
+            <h3>Csatlakozz most!</h3>
+            <form action="submit_registration.php" method="POST">
+                <input type="text" name="name" placeholder="Teljes név" required>
+                <input type="email" name="email" placeholder="Email cím" required>
+                <input type="password" name="password" placeholder="Jelszó" required>
+                <button type="submit">Regisztráció</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 StudentBridge. Minden jog fenntartva.
+    </footer>
+</body>
+</html>

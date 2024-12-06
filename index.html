@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentBridge - Főoldal</title>
+    <style>
+        /* Alapvető stílusok */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #6FC0A4;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #6FC0A4;
+            color: white;
+        }
+        .hero {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .hero h2 {
+            color: #6FC0A4;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .hero button {
+            background-color: #6FC0A4;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .hero button:hover {
+            background-color: #58A688;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2rem 1rem;
+            background-color: white;
+        }
+        .feature {
+            text-align: center;
+            margin: 1rem;
+            padding: 1.5rem;
+            max-width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .feature h3 {
+            color: #6FC0A4;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StudentBridge</h1>
+    </header>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="students.html">Hallgatóknak</a>
+        <a href="companies.html">Cégeknek</a>
+        <a href="about.html">Rólunk</a>
+    </nav>
+    <section class="hero">
+        <h2>Üdvözlünk a StudentBridge platformon!</h2>
+        <p>Összekötjük az ambiciózus egyetemistákat a fejlődő kis- és középvállalkozásokkal, hogy együtt érjék el céljaikat.</p>
+        <button onclick="window.location.href='students.html'">Csatlakozz hallgatóként</button>
+        <button onclick="window.location.href='companies.html'">Csatlakozz cégként</button>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Tehetséges hallgatók</h3>
+            <p>Az egyetemek legjobbjait kapcsoljuk össze cégekkel valódi projektekre.</p>
+        </div>
+        <div class="feature">
+            <h3>Sokszínű szolgáltatások</h3>
+            <p>Marketing, üzleti tanácsadás, vizuális identitás és közösségi média menedzsment egy helyen.</p>
+        </div>
+        <div class="feature">
+            <h3>Értékteremtő kapcsolatok</h3>
+            <p>Hosszú távú együttműködések kiépítése cégek és hallgatók között.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 StudentBridge. Minden jog fenntartva.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentBridge - Cégeknek</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #6FC0A4;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            padding: 1rem 2rem;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #6FC0A4;
+            color: white;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content h2 {
+            text-align: center;
+            color: #6FC0A4;
+        }
+        .content p {
+            line-height: 1.8;
+            margin: 1rem 0;
+        }
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .service {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            background-color: #6FC0A4;
+            color: white;
+        }
+        .service a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StudentBridge - Cégeknek</h1>
+    </header>
+    <nav>
+        <a href="index.html">Főoldal</a>
+        <a href="students.html">Hallgatóknak</a>
+        <a href="companies.html">Cégeknek</a>
+        <a href="about.html">Rólunk</a>
+    </nav>
+    <div class="content">
+        <h2>Szolgáltatásaink KKV-k számára</h2>
+        <p>
+            Fedezze fel a StudentBridge által kínált megoldásokat, amelyek segítik vállalkozását abban, hogy hatékonyabb, eredményesebb és fiatalos marketing- és üzleti stratégiákat alkalmazzon!
+        </p>
+        <div class="services-list">
+            <div class="service">
+                <a href="marketing.html">
+                    <h3>Marketing Stratégia</h3>
+                    <p>Személyre szabott, eredményorientált stratégiák.</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="business-consulting.html">
+                    <h3>Üzleti Tanácsadás</h3>
+                    <p>Hatékony megoldások a cége számára.</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="visual-identity.html">
+                    <h3>Vizuális Identitás</h3>
+                    <p>Brandépítés és vizuális identitás megalkotása.</p>
+                </a>
+            </div>
+            <div class="service">
+                <a href="social-media.html">
+                    <h3>Social Media Management</h3>
+                    <p>Hatékony közösségi média jelenlét és stratégia.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 StudentBridge. Minden jog fenntartva.
+    </footer>
+</body>
+</html>
